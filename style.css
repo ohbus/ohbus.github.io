@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+#container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+/* #################
+        MATRIX
+   ################# */
+
+canvas {
+  display: block;
+  z-index: -99;
+  font-size: 10px;
+}
+
+#intro {
+  color: white;
+  font-family: Courier New;
+  font-size: 28px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+  text-align: center;
+}
+
+#arrow {
+  position: absolute;
+  width: 100%;
+  top: 96%;
+  transform: perspective(1px) translateY(-50%);
+  text-align: center;
+}
+
+#arrow img {
+  width: 80px;
+  height: 74px;
+}
+
+/* TODO: Remove canvas entirely on mobile? */
+@media only screen and (max-device-width: 600px) {
+  canvas {
+    width: 100%;
+    height: 100%;
+    font-size: 6.5px;
+  }
+
+  #triangle {
+    width: 140px;
+    height: 140px;
+  }
+
+  #intro {
+    font-size: 36px;
+  }
+}
+
+/* #################
+       INSTAGRAM
+   #################
+
+#instagram {
+  background-color: #fff;
+  margin-top: 100%;
+  height: 100%;
+}
+
+/* #################
+         STEAM
+   #################
+
+#steam {
+  background-color: #00adee;
+  margin-top: 200%;
+  height: 100%;
+}
+
+#profilePhoto {
+  border: 2px solid blue;
+  display: inline-block;
+}
+
+*/
